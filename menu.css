@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #3d1e08;
+            padding: 0 30px;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            width: 50px; 
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .navbar .logo h2 {
+            margin: 0;
+            color: #fff;
+            font-size: 2em;
+        }
+
+        .navbar .navList {
+            display: flex;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        .navbar .navList ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .navbar .navList ul li {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navList ul li a {
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 0 5px;
+            font-size: 18px;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar .navList ul li a:hover {
+            color: rgb(238, 214, 169);
+        }
+
+        .navbar .navList ul li .fas,
+        .navbar .navList ul li .fa-user {
+            margin-left: 10px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar .navList ul li .fas.fa-shopping-cart {
+            margin-left: 30px;
+        }
+
+        .navbar .navList ul li .fas:hover,
+        .navbar .navList ul li .fa-user:hover {
+            color: rgb(238, 214, 169);
+        }
+
+        .search-container, .cart-container {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .search-container {
+            right: 50px;
+            top: 80px;
+        }
+
+        .search-container input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .cart-container {
+            right: 0;
+            top: 80px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cart-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .cart-item .item-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-item .item-info span {
+            margin: 2px 0;
+        }
+
+        .cart-item .item-info span:nth-child(2) {
+            color: rgb(181, 128, 49);
+        }
+
+        .cart-item .remove-item {
+            cursor: pointer;
+            color: rgb(163, 99, 60);
+            margin-left: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cart-item .remove-item:hover {
+            transform: scale(1.2);
+        }
+
+        .checkout-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3d1e08;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .checkout-button:hover {
+            background-color: rgb(238, 214, 169);
+            color: #3d1e08;
+        }
+
+        #search-toggle:checked ~ .search-container,
+        #cart-toggle:checked ~ .cart-container {
+            display: block;
+        }
+
+        #search-toggle,
+        #cart-toggle {
+            display: none;
+        }
+        
+    .add-to-basket {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.add-to-basket:hover {
+    transform: scale(1.1); 
+}
+
+
+h1 {
+    color: #8B4513;
+    margin-top: 70px; 
+    text-align: center;
+}
+
+.menu-section {
+    margin: 20px auto;
+    max-width: 800px; 
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel .item-container {
+    text-align: center;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel .item-container:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.carousel img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item-price {
+    margin: 5px 0;
+    color: #8B4513;
+}
+
+.add-to-basket {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #8B4513;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #3d1e08;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.footer-content img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}

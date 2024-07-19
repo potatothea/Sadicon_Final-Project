@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogs</title>
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+</head>
+<body>
+    <div class="wrapper">
+        <input type="checkbox" id="search-toggle">
+        <input type="checkbox" id="cart-toggle">
+    
+        <div class="navbar">
+            <div class="logo">
+                <img src="mylogo.png" alt="Logo Image">
+                <h2>Code Brew</h2>
+            </div>
+    
+            <div class="navList">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li>
+                        <a href="blog.html">Blogs</a>
+                        <label for="search-toggle" class="fas fa-search"></label>
+                        <label for="cart-toggle" class="fas fa-shopping-cart"></label>
+                        <a href="signin.html"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="https://www.lotusbiscoff.com/sites/default/files/2023-01/BISCOFF%20AFFOGATO-340%201x1.jpg" alt="Product 1">
+                <div class="item-info">
+                    <span>Cart Item 01</span>
+                    <span>₱78.00</span>
+                </div>
+                <span class="remove-item">x</span>
+            </div>
+            <div class="cart-item">
+                <img src="https://th.bing.com/th/id/OIP.3FOaqXYHaFLh7BJLDh_bUQAAAA?rs=1&pid=ImgDetMain" alt="Product 2">
+                <div class="item-info">
+                    <span>Cart Item 02</span>
+                    <span>₱99.00</span>
+                </div>
+                <span class="remove-item">x</span>
+            </div>
+            <div class="cart-item">
+                <img src="https://th.bing.com/th/id/OIP.KObWHbsg0IoDn2GNIflprQHaHa?w=600&h=600&rs=1&pid=ImgDetMain" alt="Product 3">
+                <div class="item-info">
+                    <span>Cart Item 03</span>
+                    <span>₱150.00</span>
+                </div>
+                <span class="remove-item">x</span>
+            </div>
+            <div class="cart-item">
+                <img src="https://th.bing.com/th/id/OIP.8BCVAJne5iwZCyapJ3usmQHaKv?rs=1&pid=ImgDetMain" alt="Product 4">
+                <div class="item-info">
+                    <span>Cart Item 04</span>
+                    <span>₱130.00</span>
+                </div>
+                <span class="remove-item">x</span>
+            </div>
+            <a href="#" class="checkout-button">Checkout</a>
+        </div>
+    
+        <h2>Our Blogs</h2>
+        <div class="blog-container">
+            <div class="blog-box">
+                <img src="https://th.bing.com/th/id/OIP.MwUUlgTA-fhDSf-KlsJd5gHaE8?rs=1&pid=ImgDetMain" alt="The Perfect Espresso">
+                <h2 class="blog-title">The Perfect Espresso</h2>
+                <p class="blog-date">October 10, 2023</p>
+                <p class="blog-content">Learn the art of making the perfect espresso shot, from bean selection to brewing techniques.</p>
+                <div class="read-more">
+                    <a href="#" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+            
+            <div class="blog-box">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5f673a92459239.5e4bf9fcc7231.jpg" alt="Brewing Methods">
+                <h2 class="blog-title">Brewing Methods</h2>
+                <p class="blog-date">September 25, 2023</p>
+                <p class="blog-content">Explore different brewing methods and find out which one suits your taste best.</p>
+                <div class="read-more">
+                    <a href="#" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+    
+            <div class="blog-box">
+                <img src="https://cdn.shopify.com/s/files/1/0025/7808/8054/files/Is-Matcha-Better-and-More-Powerful-than-Coffee-23_084ff3c7-70f6-434c-ac3e-7ede57248897.jpg?v=1535062481" alt="Latte Art Basics">
+                <h2 class="blog-title">Latte Art Basics</h2>
+                <p class="blog-date">September 15, 2023</p>
+                <p class="blog-content">A beginner's guide to creating beautiful latte art to impress your friends and customers.</p>
+                <div class="read-more">
+                    <a href="#" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+    
+    
+            <div class="blog-box">
+                <img src="https://idealgrind.co.uk/wp-content/uploads/2021/03/history-of-coffee.jpg" alt="The History of Coffee">
+                <h2 class="blog-title">The History of Coffee</h2>
+                <p class="blog-date">August 30, 2023</p>
+                <p class="blog-content">Dive into the rich history of coffee and how it became a global beverage.</p>
+                <div class="read-more">
+                    <a href="#" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+    
+    
+            <div class="blog-box">
+                <img src="https://th.bing.com/th/id/OIP.8y4dsXhl89bM00KDlELBOgHaE8?w=960&h=640&rs=1&pid=ImgDetMain" alt="Healthy Coffee Recipes">
+                <h2 class="blog-title">Healthy Coffee Recipes</h2>
+                <p class="blog-date">August 15, 2023</p>
+                <p class="blog-content">Discover healthy coffee recipes that are delicious and good for you.</p>
+                <div class="read-more">
+                    <a href="#" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+    
+            <div class="blog-box">
+                <img src="https://th.bing.com/th/id/OIP.6O1dgpNk-vncbeU7xAWtmAHaE8?rs=1&pid=ImgDetMain" alt="Coffee and Sustainability">
+                <h2 class="blog-title">Coffee and Sustainability</h2>
+                <p class="blog-date">July 30, 2023</p>
+                <p class="blog-content">Learn about sustainable coffee practices and how you can support eco-friendly coffee production.</p>
+                <div class="read-more">
+                    <a href="#" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <img src="mylogo.png" alt="Logo">
+                <p>&copy; 2023 Code Brew. All Rights Reserved.</p>
+                <p>Created by Althea Zuleika Sadicon</p>
+                <p>Email: <a href="mailto:sadiconaltheazuleika@gmail.com">sadiconaltheazuleika@gmail.com</a></p>
+                
+            </div>
+        </footer>
+    </div>
+    </body>
+    </html>

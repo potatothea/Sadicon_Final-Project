@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: var(--clr-background);
+            padding: 20px 0; 
+        }
+    
+    .navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d1e08;
+    padding: 0 30px;
+    }
+    
+    .navbar .logo {
+    display: flex;
+    align-items: center;
+    }
+    
+    .navbar .logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px;
+    }
+    
+    .navbar .logo h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+    }
+    
+    .navbar .navList {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+    }
+    
+    .navbar .navList ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    }
+    
+    .navbar .navList ul li {
+    display: flex;
+    align-items: center;
+    }
+    
+    .navbar .navList ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0 5px;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    }
+    
+    .navbar .navList ul li a:hover {
+    color: rgb(238, 214, 169);
+    }
+    
+    .navbar .navList ul li .fas,
+    .navbar .navList ul li .fa-user {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    }
+    
+    .navbar .navList ul li .fas.fa-shopping-cart {
+    margin-left: 30px;
+    }
+    
+    .navbar .navList ul li .fas:hover,
+    .navbar .navList ul li .fa-user:hover {
+    color: rgb(238, 214, 169);
+    }
+    
+    .search-container, .cart-container {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    }
+    
+    .search-container {
+    right: 50px;
+    top: 80px;
+    }
+    
+    .search-container input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    }
+    
+    .cart-container {
+    right: 0;
+    top: 80px;
+    }
+    
+    .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    
+    .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .cart-item img:hover {
+    transform: scale(1.1);
+    }
+    
+    .cart-item .item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .cart-item .item-info span {
+    margin: 2px 0;
+    }
+    
+    .cart-item .item-info span:nth-child(2) {
+    color: rgb(181, 128, 49);
+    }
+    
+    .cart-item .remove-item {
+    cursor: pointer;
+    color: rgb(163, 99, 60);
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .cart-item .remove-item:hover {
+    transform: scale(1.2);
+    }
+    
+    .checkout-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3d1e08;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    }
+    
+    .checkout-button:hover {
+    background-color: rgb(238, 214, 169);
+    color: #3d1e08;
+    }
+    
+    #search-toggle:checked ~ .search-container,
+    #cart-toggle:checked ~ .cart-container {
+    display: block;
+    }
+    
+    #search-toggle,
+    #cart-toggle {
+    display: none;
+    }
+        :root {
+            --clr-primary: #6F4E37;
+            --clr-secondary: #D2B48C;
+            --clr-background: #ffffff;
+            --clr-text: #4B3832;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 0; 
+        }
+
+        form {
+            background: var(--clr-primary);
+            padding: 60px 80px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            color: var(--clr-background);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1.25em;
+            letter-spacing: 0.1em;
+            margin-bottom: 50px;
+        }
+
+        .inputBox {
+            position: relative;
+            width: 300px;
+            margin-bottom: 40px;
+        }
+
+        .inputBox input {
+            width: 100%;
+            padding: 10px 30px 10px 10px;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid var(--clr-secondary);
+            outline: none;
+            color: var(--clr-background);
+            font-size: 1em;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .inputBox label {
+            position: absolute;
+            left: 10px;
+            padding: 10px 0;
+            pointer-events: none;
+            color: var(--clr-secondary);
+            text-transform: uppercase;
+        }
+
+        .inputBox label span {
+            display: inline-block;
+            letter-spacing: 0.05em;
+            transition: 0.2s ease-in-out;
+        }
+
+        .inputBox input:focus ~ label span,
+        .inputBox input:valid ~ label span {
+            color: var(--clr-background);
+            letter-spacing: 0.15em;
+            transform: translateY(-25px);
+        }
+
+        .inputBox input:focus,
+        .inputBox input:valid {
+            border-bottom: 2px solid var(--clr-background);
+            box-shadow: 0 0 10px var(--clr-primary), 0 0 20px var(--clr-primary), 0 0 30px var(--clr-primary);
+        }
+
+        .inputBox i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--clr-secondary);
+            font-size: 1.2em;
+        }
+
+        .inputBox input[type="submit"] {
+            background: var(--clr-background);
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            color: var(--clr-primary);
+            font-size: 1.15em;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .inputBox input[type="submit"]:hover {
+            background: var(--clr-secondary);
+            color: var(--clr-background);
+        }
+
+        form p {
+            color: var(--clr-background);
+        }
+
+        form p a {
+            color: var(--clr-secondary);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        form p a:hover {
+            color: var(--clr-background);
+            text-decoration: underline;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #3d1e08;
+            text-align: center;
+            color: #fff;
+        }
+
+        .footer-content img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .footer-content a {
+            color: #fff;
+            text-decoration: none;
+        }
+    

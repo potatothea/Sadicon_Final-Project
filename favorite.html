@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorite</title>
+<link rel="stylesheet" href="favorite.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+</head>
+<body>
+    <input type="checkbox" id="search-toggle">
+    <input type="checkbox" id="cart-toggle">
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="mylogo.png" alt="Logo Image">
+            <h2>Code Brew</h2>
+        </div>
+
+        <div class="navList">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="blog.html">Blogs</a>
+                    <label for="search-toggle" class="fas fa-search"></label>
+                    <label for="cart-toggle" class="fas fa-shopping-cart"></label>
+                    <a href="signin.html"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="https://www.lotusbiscoff.com/sites/default/files/2023-01/BISCOFF%20AFFOGATO-340%201x1.jpg" alt="Product 1">
+            <div class="item-info">
+                <span>Cart Item 01</span>
+                <span>₱78.00</span>
+            </div>
+            <span class="remove-item">x</span>
+        </div>
+        <div class="cart-item">
+            <img src="https://th.bing.com/th/id/OIP.3FOaqXYHaFLh7BJLDh_bUQAAAA?rs=1&pid=ImgDetMain" alt="Product 2">
+            <div class="item-info">
+                <span>Cart Item 02</span>
+                <span>₱99.00</span>
+            </div>
+            <span class="remove-item">x</span>
+        </div>
+        <div class="cart-item">
+            <img src="https://th.bing.com/th/id/OIP.KObWHbsg0IoDn2GNIflprQHaHa?w=600&h=600&rs=1&pid=ImgDetMain" alt="Product 3">
+            <div class="item-info">
+                <span>Cart Item 03</span>
+                <span>₱150.00</span>
+            </div>
+            <span class="remove-item">x</span>
+        </div>
+        <div class="cart-item">
+            <img src="https://th.bing.com/th/id/OIP.8BCVAJne5iwZCyapJ3usmQHaKv?rs=1&pid=ImgDetMain" alt="Product 4">
+            <div class="item-info">
+                <span>Cart Item 04</span>
+                <span>₱134.00</span>
+            </div>
+            <span class="remove-item">x</span>
+        </div>
+        <a href="#" class="checkout-button">Checkout</a>
+    </div>
+
+    <div class="container">
+
+        <div>
+            <h2 class="section-title">Favorites</h2>
+            <div class="review-grid">
+                <div class="review-box">
+                    <p class="comment">"I love the espresso here!"</p>
+                    <img src="https://assets-global.website-files.com/65154e69ae1ad53c6e8aac1e/65154e69ae1ad53c6e8aae0f_patrick-meyer-thumbnail-image-startux-webflow-ecommerce-template.jpg" alt="User photo" class="user-photo">
+                    <p class="name">John Doe</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"The croissants are amazing!"</p>
+                    <img src="https://static.standard.co.uk/2023/08/22/16/0c539df74b3bdd82bb975c1bae9f9513Y29udGVudHNlYXJjaGFwaSwxNjkyODAwMjI2-2.71357703.jpg?crop=8:5,smart&quality=75&auto=webp&width=1024" alt="User photo" class="user-photo">
+                    <p class="name">Jane Smith</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"Best cappuccino in town!"</p>
+                    <img src="https://th.bing.com/th/id/OIP.yICfge5TmqgTLDaPERjRngHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="User photo" class="user-photo">
+                    <p class="name">Michael Lee</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"Absolutely love the bagels!"</p>
+                    <img src="https://th.bing.com/th/id/OIP.1nyrUJYNbI7jz6FExP4MpAHaJO?w=642&h=800&rs=1&pid=ImgDetMain" alt="User photo" class="user-photo">
+                    <p class="name">Emma Wilson</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"The chocolate cake is to die for!"</p>
+                    <img src="https://th.bing.com/th/id/OIP.YCN6zu8mEm8tlIGWB9BMJwHaLG?w=667&h=1000&rs=1&pid=ImgDetMain" alt="User photo" class="user-photo">
+                    <p class="name">Sarah Brown</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <h2 class="section-title">Recommendations</h2>
+            <div class="review-grid">
+                <div class="review-box">
+                    <p class="comment">"Try the iced latte, it's the best!"</p>
+                    <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2018/10/cool-profile-pictures-retouching-1.jpg" alt="User photo" class="user-photo">
+                    <p class="name">Alice Johnson</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"I highly recommend the blueberry muffin."</p>
+                    <img src="https://i.pinimg.com/originals/8d/da/31/8dda31e8cf8a85319be7cb2c880a82c1.jpg" alt="User photo" class="user-photo">
+                    <p class="name">Bob Brown</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"The avocado toast is a must-try!"</p>
+                    <img src="https://www.dmarge.com/wp-content/uploads/2015/06/robertpat.jpg" alt="User photo" class="user-photo">
+                    <p class="name">Chris Green</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"You have to try the pumpkin spice latte!"</p>
+                    <img src="https://th.bing.com/th/id/OIP.FehlB7pzByPOQ9ajvAHazAHaEo?rs=1&pid=ImgDetMain" alt="User photo" class="user-photo">
+                    <p class="name">Laura White</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <p class="comment">"Best place for a quick coffee break!"</p>
+                    <img src="https://th.bing.com/th/id/OIP.3Z-Yjg____q4Q4poT-sq1wHaLJ?rs=1&pid=ImgDetMain" alt="User photo" class="user-photo">
+                    <p class="name">Tom Harris</p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="mylogo.png" alt="Logo">
+            <p>&copy; 2023 Code Brew. All Rights Reserved.</p>
+            <p>Created by Althea Zuleika Sadicon</p>
+            <p>Email: <a href="mailto:sadiconaltheazuleika@gmail.com">sadiconaltheazuleika@gmail.com</a></p>
+            
+        </div>
+    </footer>
+</body>
+</html>
